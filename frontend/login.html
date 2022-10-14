@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <title>particles.js</title>
+
+      <!-- Import style.css from root directory -->
+      <link rel="stylesheet" href="./login.css" />
+</head>
+
+<body>
+      <!-- Particles.js div -->
+      <div id="particles-js">
+            <div class="heading">
+                  <div class="login-box">
+                        <h2 id="textMsz">Login</h2>
+                        <form id="form1">
+                              <div class="user-box">
+                                    <input type="text" name="" required="">
+                                    <label>Username</label>
+                              </div>
+                              <div class="user-box">
+                                    <input type="password" name="" required="">
+                                    <label>Password</label>
+                              </div>
+                              <a href="#">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    LogIn
+                              </a>
+                              <a onclick="makeItVisible()">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    SignUp
+                              </a>
+                        </form>
+                        <form id="form2">
+                              <a onclick="makeItInvisible()">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    GoBack
+                              </a>
+                              <a href="#">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    SignUp
+                              </a>
+                              <a href="#">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    SignUp With Google
+                              </a>
+                              <a href="#">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    SignUp With Meta
+                              </a>
+                        </form>
+                  </div>
+            </div>
+      </div>
+
+      <!-- Import Particles.js and app.js files -->
+      <script src="particles.js-master/particles.js">
+      </script>
+      <script src="/particles.js-master/demo/js/app.js">
+      </script>
+      <script>
+            function makeItVisible() {
+                  document.getElementById('textMsz').innerText = "SignUp";
+                  document.getElementById('form1').style.display = 'none';
+                  document.getElementById('textMsz').style.margin = '0';
+                  document.getElementById('form2').children[0].style.margin = '0';
+            }
+            function makeItInvisible() {
+                  document.getElementById('textMsz').innerText = "LogIn";
+                  document.getElementById('form1').style.display = 'inherit';
+                  document.getElementById('textMsz').style.margin = '0 0 30px';
+                  document.getElementById('form2').children[0].style.margin = '40px 20px 0px 20px';
+            }
+      </script>
+</body>
+
+</html>
