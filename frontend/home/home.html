@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+      <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+      <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+      <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+      <nav>
+            <ul>
+                  <li class="home"><a href="">Home</a></li>
+                  <li class="services"><a href="">Services</a></li>
+                  <li class="products"><a href="">Products</a></li>
+                  <li class="pricing"><a href="">Pricing</a></li>
+                  <li class="team"><a href="">Our Team</a></li>
+                  <li class="careers"><a href="">Careers</a></li>
+                  <li class="about"><a href="">About Us</a></li>
+                  <li class="contact"><a href="">Contact Us</a></li>
+            </ul>
+      </nav>
+
+      <div class="mid">
+            <div class="leftBox">
+                  <div class="scrollBtn">
+                        <div id="btn" class="btn"> <a href="#h12">Scroll Down</a> </div>
+                  </div>
+                  
+            </div>
+            <div class="text">
+                  <hr id="h12" >
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis illum totam error, unde soluta quis ipsa earum sed quasi? Esse at ipsum repellat accusamus atque quibusdam non dolor laudantium nostrum, quisquam dolores, expedita, fugiat maiores fugit eveniet qui natus. Laborum, consequuntur quae. Eaque et saepe aliquam rem exercitationem? Accusamus molestias provident omnis eaque iste magnam, atque impedit repellendus praesentium. Ratione soluta harum architecto vero cum voluptas magnam cupiditate unde ut dignissimos ea nihil ex molestias ipsum, sint repudiandae dolorem enim nesciunt assumenda error. Totam praesentium provident, eum ut quia, animi nihil accusantium eligendi ipsam debitis placeat corporis iure iste possimus?</p>
+                   </div>
+            <div class="rightBox">
+                  <canvas id="canvasOne" width="1300" height="820"></canvas>
+            </div>
+      </div>
+
+
+
+
+      <script src="modernizr-custom.js"></script>
+      <script src="home.js"></script>
+      <script>$(document).ready(function () {
+                  $('.toggle').click(function () {
+                        $('.menu').toggleClass('active');
+                  });
+                  var btn = document.getElementById('btn');
+                  window.addEventListener('scroll',()=>{
+                        varx = window.scrollY;
+                        btn.style.opacity = (1-varx/100);
+                  })
+            });</script>
+</body>
+
+</html>

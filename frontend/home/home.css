@@ -1,0 +1,201 @@
+body {
+  background-color: #000000;
+  color: #555555;
+}
+html{
+      scroll-behavior: smooth;
+
+}
+
+h4 {
+  font-family: sans-serif;
+  color: #555555;
+  font-size: 16px;
+}
+
+h3 {
+  font-family: sans-serif;
+  color: #555555;
+}
+
+p {
+  font-family: sans-serif;
+  color: #888888;
+  font-size: 14px;
+}
+
+a {
+  font-family: sans-serif;
+  color: #d15423;
+  text-decoration: none;
+}
+
+.slider {
+  width: 500px;
+  background: rgba(0, 90, 50, 0.7);
+}
+
+/*
+
+
+HTML5 Canvas - Projecting 3D particles to a 2D canvas.
+from rectangleworld.com
+
+
+
+-- I did not code this, just added the jquery slider -- 
+
+-*/
+/* ///////////////////////////////////////////// */
+nav {
+      display: flex;
+      justify-content: center;
+      height: 50px;
+      background-color: #000;
+      position: sticky;
+      top: 0;
+  }
+  
+  ul { list-style-type: none;}
+  
+  ul li { 
+      display: inline;
+      float: left;
+      margin: 0;
+      padding: 0;
+   }
+  
+  ul li a {
+      display: inline-block;
+      color: #fff;
+      font-size: 16pt;
+      text-decoration: none;
+      text-align: center;
+      padding: 12.7px 12.7px;
+      box-sizing: border-box;
+      height: 45px;
+  }
+  
+  .home, .services, .products, .pricing, .team, .careers, .about, .contact {
+      background-size: 100% 200%;
+      transition: background-position 1s;
+  } 
+  
+  .home:hover, .services:hover, .products:hover, .pricing:hover, .team:hover, .careers:hover, .about:hover, .contact:hover {
+      background-position: 0 100%;
+      transition: all .6s ease-in;
+  }
+  
+  .home { 
+      border-bottom: 5px solid orange;
+      background-image: linear-gradient(to top, orange 50%, black 50%);
+  
+  } 
+  .home:hover {background-color: orange;} 
+  
+  .services {
+      border-bottom: 5px solid coral;
+      background-image: linear-gradient(to top, coral 50%, black 50%);
+  }
+  .services:hover { background-color: coral;}
+  
+  
+  .products {
+      border-bottom: 5px solid #FE3E00;
+      background-image: linear-gradient(to top, #FE3E00 50%, black 50%);
+  }
+  .products:hover { background-color: #FE3E00;}
+  
+  .pricing {
+      border-bottom: 5px solid #922b3e;
+      background-image: linear-gradient(to top, #922b3e 50%, black 50%);
+  }
+  .pricing:hover { background-color: #922b3e;}
+  
+  .team {
+      border-bottom: 5px solid purple;
+      background-image: linear-gradient(to top, purple 50%, black 50%);
+  }
+  .team:hover {background-color: purple;}
+  .careers {
+      border-bottom: 5px solid #1C1AAF;
+      background-image: linear-gradient(to top, #1C1AAF 50%, black 50%);
+  }
+  .careers:hover { background-color: #1C1AAF;}
+  
+  
+  .about {
+      border-bottom: 5px solid #0066E7;
+      background-image: linear-gradient(to top, #0066E7 50%, black 50%);
+  }
+  .about:hover { background-color: #0066E7;}
+  .contact {
+      border-bottom: 5px solid #0a8062;
+      background-image: linear-gradient(to top, #0a8062 50%, black 50%);
+  }
+  .contact:hover { background-color: #0a8062;}
+  
+  .content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 auto;
+      width: 880px;
+      height: 685px;
+      margin-top: 50px;
+  
+  }
+  h1 {
+      background-image: linear-gradient(to right, orange, #FE3E00, #922b3e, purple,#1C1AAF, #0066E7, #0a8062); 
+      color: white;
+      text-align: center;
+      font-size: 3.8em;
+      -webkit-background-clip: text;
+      color: transparent;
+  }
+  
+  p {
+      text-align: center;
+      -webkit-background-clip: text;
+      color: #fff;
+      margin-top: 30px;
+      font-size: 2em;
+  }
+  .mid{
+      width: 100vw;
+      /* height: 80vh; */
+      /* display: flex; */
+      /* flex-wrap: wrap; */
+  }
+  .leftBox{
+      width: 50%;
+      height: 100%;
+      text-align: center;
+      font-size: 15px;
+      /* display: none; */
+  }
+  .rightBox{
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      text-align: center;
+      z-index: -1;
+  }
+.scrollBtn{
+       height: 90vh;
+       margin-bottom: 40px;
+       width: 100vw;
+       margin: auto;
+       display: flex;
+       align-items: end;
+       justify-content: center;
+}
+.text{
+      margin-top: 50vh;
+}
+#canvasOne{
+      width: 100%;
+      height: 110%;
+}
